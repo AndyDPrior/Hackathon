@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hackathon.API.Controllers
 {
-    public class StringController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class StringController : ControllerBase
     {
+        [HttpGet]
         public string ReverseString(string inputString)
         {
             string reversed = new(inputString.Reverse().ToArray());
