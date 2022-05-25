@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Je3CMu+kUFVPdV43xJIPOnsASqzR39/0ytZNuHGa8HIV+mxWuEJy06MsTNx8WbA+BietQ3UH4rA/zB9Jk5+I4A==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\Hackathon\\HackathonWeb\\HackathonWeb\\HackathonWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\P433536\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}

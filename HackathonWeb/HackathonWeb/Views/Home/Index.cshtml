@@ -1,0 +1,29 @@
+﻿@model HomeViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form asp-controller="Home" asp-action="GetWeather" method="get">
+        <button type="submit">Get Weather</button>
+    </form>
+    @if(Model.WeatherForecastList.Count() > 0)
+    {
+        foreach(var weatherForecast in Model.WeatherForecastList)
+        {
+            <h2>The weather on @weatherForecast.Date is @weatherForecast.TemperatureC</h2>
+        }
+    }
+    <br />
+    <p>Reverse a string below -></a>.</p>
+    <form asp-controller="Home" asp-action="Index" method="get">
+        Input:  <input asp-for="Input" /> <br /><br />
+        <button type="submit">Get ReverseString</button>
+    </form>
+        @if(!String.IsNullOrEmpty(Model.ReversedString))
+    {
+        <h2>The string reversed is @Model.ReversedString</h2>
+    }
+</div>
